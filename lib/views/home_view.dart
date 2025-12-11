@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:lottie/lottie.dart';
 import 'package:switch_theme_app/services/theme_service.dart';
 import 'package:switch_theme_app/views/colors_view.dart';
 import 'package:switch_theme_app/deberInputs/index.dart';
@@ -50,7 +51,6 @@ class HomeView extends StatelessWidget {
               ),
               const SizedBox(height: 10),
 
-              // ⭐ BOTÓN NUEVO QUE TE LLEVA A InputsPage (tu deber)
               ElevatedButton(
                 onPressed: () {
                   Navigator.of(context).push(
@@ -58,6 +58,13 @@ class HomeView extends StatelessWidget {
                   );
                 },
                 child: const Text('Go to inputs view deber Nathan'),
+              ),
+              const SizedBox(height: 20),
+
+              // ⭐ LOTTIE BIEN COLOCADO
+              Lottie.network(
+                "https://lottie.host/874e0a25-3052-49d1-83eb-0437964d1800/VaN3h8MhiG.json",
+                height: 150,
               ),
             ],
           ),
